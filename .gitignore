@@ -1,0 +1,10 @@
+venv/
+web_app/
+alphabet-recognition/
+.ipynb_checkpoints/
+dataset.zip
+*.pyc  
+*.png 
+*.jpg 
+*.jpeg 
+*.txt
