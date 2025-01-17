@@ -5,6 +5,5 @@ alphabet-recognition/
 dataset.zip
 *.pyc  
 *.png 
-*.jpg 
 *.jpeg 
 *.txt
