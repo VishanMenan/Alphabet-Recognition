@@ -22,11 +22,14 @@ This project was primarily built as a learning exercise to understand the fundam
 ## 📊 Model Performance  
 ### Accuracy and Loss  
 The model was trained for multiple epochs, and the performance metrics—accuracy and loss—were monitored throughout the training process.
-Add img
+
+![Test Accuracy and Loss](Images/test-acc-and-loss.JPG)
 
 ### Confusion Matrix  
 The confusion matrix below illustrates the model's performance across all classes (`A-Z` and `a-z`).  
-Add img
+
+![Test Accuracy and Loss](Images/confusion-matrix.JPG)
+
 From the matrix, we observe that certain lowercase letters, such as `l` and `i`, and uppercase letters like `O` and `Q`, tend to be misclassified due to their visual similarity.
 
 ## 🖼️ Prediction Results  
@@ -38,15 +41,21 @@ This section highlights the model's real-world performance with example predicti
 Below are examples of correct and incorrect predictions: 
 #### Correct Predictions
 Example 1: Predicted 'A'
-Add img
-Example 2: Predicted 'B'
-Add img
-Example 3: Predicted 'C'
-Add img
+
+![Predicted A accurately](Images/A.JPG)
+
+Example 2: Predicted 'j'
+
+![Predicted j accurately](Images/j.JPG)
+
+Example 3: Predicted 'K'
+
+![Predicted K accurately](Images/K.JPG)
 
 #### Incorrect Predictions
-Example 1: Predicted 'C' instead of 'd'
-Add img
+Example 1: Predicted 'M' instead of 'A'
+
+![Predicted M instead of A](Images/M.JPG)
 
 ## 🌟 Future Enhancements
 1. **Live Webcam Integration:** Enable real-time alphabet recognition using a camera.
