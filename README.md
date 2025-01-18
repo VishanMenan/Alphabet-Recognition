@@ -1,7 +1,7 @@
 # Alphabet Recognition System - Using TensorFlow and Python  
 
 ## 📖 Overview  
-The **Alphabet Recognition System** is an AI-based application designed to recognize and predict alphabet characters (`A-Z` and `a-z`) from images. This project leverages a custom-trained deep learning model using **TensorFlow/Keras** to deliver accurate predictions. It showcases an end-to-end pipeline, including preprocessing, training, and deployment of the model.  
+The **Alphabet Recognition System** is an AI-based application designed to recognize and predict alphabet characters (`A-Z` and `a-z`) from images. This project leverages a custom-trained deep learning model using **TensorFlow/Keras** to deliver accurate predictions. It showcases an end-to-end pipeline, including preprocessing, training, and deployment of the model. The system uses the file path method for input, where the user sets the location of the image file to predict.
 
 This project was primarily built as a learning exercise to understand the fundamentals of deep learning, from dataset preparation and model training to prediction and evaluation.
 
@@ -58,6 +58,8 @@ Example 1: Predicted 'M' instead of 'A'
 ![Predicted M instead of A](Images/M.JPG)
 
 ## 🌟 Future Enhancements
-1. **Live Webcam Integration:** Enable real-time alphabet recognition using a camera.
-2. **Non-English Alphabets:** Expand support to include alphabets from other languages.
-3. **Improved Accuracy:** Integrate advanced architectures like ResNet or EfficientNet for better performance.
+1. **Expanded Dataset**: Train the model with more alphabet image samples and more epochs for better accuracy.
+2. **Live Webcam Integration:** Enable real-time alphabet recognition using a camera.
+3. **Non-English Alphabets:** Expand support to include alphabets from other languages.
+4. **User Interface**: Build a UI and make the process of loading input through a web app.
+5. **Improved Accuracy:** Integrate advanced architectures like ResNet or EfficientNet for better performance.
