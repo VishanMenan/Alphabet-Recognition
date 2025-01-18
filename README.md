@@ -1,59 +1,62 @@
 # Alphabet Recognition System - Using TensorFlow and Python  
 
 ## 📖 Overview  
-The **Alphabet Recognition System** is an AI-based application designed to recognize and predict alphabet characters (`A-Z` and `a-z`) from images. This project leverages a custom-trained deep learning model using **TensorFlow/Keras** to deliver accurate predictions. It showcases an end-to-end pipeline, including preprocessing, training, and deployment of the model. The system uses the file path method for input, where the user sets the location of the image file to predict.
+The **Alphabet Recognition System** is an AI-based system designed to recognize and predict alphabet characters (`A-Z` and `a-z`) from images. This project leverages a custom-trained deep learning model using **TensorFlow/Keras** to deliver accurate predictions. It showcases an end-to-end pipeline, including preprocessing, training, and deployment of the model. 
 
-This project was primarily built as a learning exercise to understand the fundamentals of deep learning, from dataset preparation and model training to prediction and evaluation.
+The model can be tested by specifying the file path of the input image stored locally.
+
+*This project was primarily built as a learning exercise to understand the fundamentals of deep learning, from dataset preparation and model training to prediction and evaluation.
 
 ## ✨ Features  
 ✅ Supports recognition of both uppercase (`A-Z`) and lowercase (`a-z`) alphabets.  
+✅ Preprocesses input images automatically to match the model's requirements for seamless predictions.  
+✅ Displays the input image along with the predicted output, making it easy to verify results.  
 ✅ Utilizes TensorFlow/Keras for robust and efficient deep learning.  
-✅ Preprocesses input images automatically for seamless predictions.  
-✅ Displays the input image and prediction output for user verification.  
 ✅ Modular design for easy upgrades and scalability.  
 
 ## 🛠️ Technology Stack  
+- **Machine Learning Framework**: TensorFlow/Keras
 - **Programming Language**: Python  
-- **Machine Learning Framework**: TensorFlow/Keras  
+- **Image Processing**: Pillow (PIL)
 - **Visualization**: Matplotlib  
-- **Image Processing**: Pillow (PIL)  
 - **Data Handling**: NumPy
 
 ## 📊 Model Performance  
 ### Accuracy and Loss  
-The model was trained for multiple epochs, and the performance metrics—accuracy and loss—were monitored throughout the training process.
+The model was trained for 15 epochs and the performance metrics (accuracy and loss) were monitored throughout the training process.
 
 ![Test Accuracy and Loss](Images/test-acc-and-loss.JPG)
 
 ### Confusion Matrix  
-The confusion matrix below illustrates the model's performance across all classes (`A-Z` and `a-z`).  
+The confusion matrix below illustrates the model's performance across all alphabet classes (`A-Z` and `a-z`).  
 
 ![Test Accuracy and Loss](Images/confusion-matrix.JPG)
 
-From the matrix, we observe that certain lowercase letters, such as `l` and `i`, and uppercase letters like `O` and `Q`, tend to be misclassified due to their visual similarity.
+From the matrix, we can observe that certain lowercase letters, such as `j` and `l`, and uppercase letters like `C` and `E`, tend to be misclassified due to their visual similarity.
 
 ## 🖼️ Prediction Results  
 ### Description  
 This section highlights the model's real-world performance with example predictions. The model performs exceptionally well for most alphabets but struggles with visually similar letters, such as:  
-- Uppercase letters: `O`, `Q`, and `D`.  
-- Lowercase letters: `i`, `l`, and `j`.  
+- Uppercase letters: `C`, `D`, and `E`.  
+- Lowercase letters: `C`, `j`, and `l`.  
 
 Below are examples of correct and incorrect predictions: 
-#### Correct Predictions
-Example 1: Predicted 'A'
+
+#### ✅ Correct Predictions
+Example 1: Predicted **'A'**
 
 ![Predicted A accurately](Images/A.JPG)
 
-Example 2: Predicted 'j'
+Example 2: Predicted **'j'**
 
 ![Predicted j accurately](Images/j.JPG)
 
-Example 3: Predicted 'K'
+Example 3: Predicted **'K'**
 
 ![Predicted K accurately](Images/K.JPG)
 
-#### Incorrect Predictions
-Example 1: Predicted 'M' instead of 'A'
+#### ❌ Incorrect Prediction
+Example 1: Predicted **'M'** instead of **'A'**
 
 ![Predicted M instead of A](Images/M.JPG)
 
